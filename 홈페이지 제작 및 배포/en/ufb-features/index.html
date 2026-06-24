@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFB Properties | IMB Co., Ltd.</title>
+  <meta name="description" content="Six common physical properties of ultra-fine bubbles (UFB) — ultra-small size, long-term stability, large specific surface area, negative surface charge, cleaning·penetration, and reactive species on collapse — explained with diagrams.">
+  <link rel="alternate" hreflang="ko" href="https://www.ufb.co.kr/ufb-features/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.ufb.co.kr/en/ufb-features/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.ufb.co.kr/ufb-features/index.html">
+  <link rel="icon" type="image/png" href="/assets/img/logo-imb.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+  <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'system-ui', 'sans-serif'] }, colors: { ink: '#070b12', accent: '#38bdf8' } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; } body { word-break: keep-all; }
+    .ease-supa { transition: all .5s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal { opacity: 0; transform: translateY(2rem); filter: blur(4px); }
+    .reveal.in { animation: fadeInUp .9s cubic-bezier(0.16,1,0.3,1) forwards; animation-delay: calc(var(--i, 0) * 90ms); }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+    @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .mesh { background: radial-gradient(600px 400px at 12% 8%, rgba(56,189,248,0.10), transparent 60%), radial-gradient(700px 500px at 88% 30%, rgba(56,189,248,0.06), transparent 60%); }
+    .noise { position: fixed; inset: 0; z-index: 60; pointer-events: none; opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+    .diagram { background: linear-gradient(160deg, #0a1622 0%, #0b1118 100%); }
+  </style>
+</head>
+<body class="bg-ink text-zinc-100 antialiased mesh">
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-40 flex justify-center px-4">
+    <nav class="mt-4 w-full max-w-5xl rounded-full backdrop-blur-xl bg-white/[0.06] border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] px-5 sm:px-6 py-3 flex items-center justify-between">
+      <a href="/en/index.html" class="flex items-center gap-2.5">
+        <img src="/assets/img/logo-imb.png" alt="IMB logo" class="h-8 w-8 object-contain rounded-lg">
+        <span class="font-bold tracking-tight text-[15px]">IMB <span class="text-zinc-500 font-medium hidden sm:inline">Co., Ltd.</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[14px] text-zinc-300">
+        <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
+        <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="/en/ufb-features/index.html" class="text-white font-semibold">UFB Properties</a>
+        <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:flex items-center rounded-full bg-white/5 border border-white/10 text-[12px] font-semibold overflow-hidden">
+          <a href="/ufb-features/index.html" class="px-3 py-1.5 text-zinc-400 hover:text-white ease-supa">KR</a>
+          <span class="px-3 py-1.5 bg-accent text-ink">EN</span>
+        </div>
+        <a href="/en/contact/index.html" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-accent text-ink font-semibold text-[14px] px-5 py-2.5 hover:scale-[1.02] active:scale-[0.98] ease-supa">Contact Us
+          <span class="w-6 h-6 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></a>
+        <button id="menuBtn" class="md:hidden w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="Open menu"><iconify-icon icon="solar:hamburger-menu-linear" class="text-xl"></iconify-icon></button>
+      </div>
+    </nav>
+  </header>
+  <div id="mobileMenu" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 backdrop-blur-3xl bg-ink/90"></div>
+    <div class="relative h-full flex flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="Close menu"><iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon></button>
+      <a href="/en/about/index.html" class="hover:text-accent ease-supa">About</a>
+      <a href="/en/business/index.html" class="hover:text-accent ease-supa">Materials</a>
+      <a href="/en/ufb/index.html" class="hover:text-accent ease-supa">i-UFB Solutions</a>
+      <a href="/en/ufb-features/index.html" class="text-accent">UFB Properties</a>
+      <a href="/en/contact/index.html" class="hover:text-accent ease-supa">Location · Contact</a>
+      <a href="/ufb-features/index.html" class="text-base text-zinc-400 hover:text-accent ease-supa">한국어로 보기</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="pt-40 pb-14 md:pt-48 md:pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal in max-w-3xl">
+        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">UFB Characteristics</span>
+        <h1 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-keep-all">The <span class="text-accent">6 properties</span><br>of ultra-fine bubbles (UFB)</h1>
+        <p class="mt-7 text-base md:text-lg text-zinc-400 leading-relaxed break-keep-all">Ultra-fine bubbles (UFB) are extremely small bubbles less than 1 µm (micrometer) in diameter. They have physical properties completely different from ordinary bubbles, and these properties underpin a wide range of effects — cleaning, water quality improvement, higher dissolved gas, and more. Below are the six representative UFB properties commonly described in academic literature.</p>
+      </div>
+      <div class="reveal mt-8 flex flex-wrap gap-2.5 text-[13px]" style="--i:1">
+        <span class="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">Diameter &lt; 1 µm</span>
+        <span class="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">Zeta potential ≈ −40 mV</span>
+        <span class="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">Long suspension in water</span>
+        <span class="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">Large specific surface area</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="pb-20 md:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- 1. Ultra-small size -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:1">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Size comparison diagram">
+              <text x="20" y="28" fill="#9ca3af" font-size="12" font-family="sans-serif">Size comparison</text>
+              <circle cx="78" cy="110" r="48" fill="#38bdf8" fill-opacity="0.10" stroke="#3f4754" stroke-width="1.5"/>
+              <text x="78" y="114" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="sans-serif">Human hair</text>
+              <text x="78" y="172" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">≈ 80 µm</text>
+              <circle cx="190" cy="120" r="26" fill="#38bdf8" fill-opacity="0.16" stroke="#3f4754" stroke-width="1.5"/>
+              <text x="190" y="124" fill="#cbd5e1" font-size="10" text-anchor="middle" font-family="sans-serif">Microbubble</text>
+              <text x="190" y="172" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">1–100 µm</text>
+              <circle cx="290" cy="128" r="5" fill="#38bdf8"/>
+              <circle cx="290" cy="128" r="12" fill="none" stroke="#38bdf8" stroke-opacity="0.5" stroke-dasharray="2 3"/>
+              <text x="300" y="120" fill="#38bdf8" font-size="11" font-family="sans-serif">UFB</text>
+              <text x="300" y="172" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">&lt; 1 µm</text>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">01 · Ultra-small size</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">Invisible, under 1 µm</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">UFB are less than 1 µm (1000 nm) in diameter — about 1/1000 the width of a human hair. They scatter almost no light, so the water stays clear even when they are dispersed in it.</p>
+          </div>
+        </article>
+
+        <!-- 2. Long-term stability -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:2">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Long-term stability diagram">
+              <text x="20" y="26" fill="#9ca3af" font-size="12" font-family="sans-serif">Ordinary bubbles (rise &amp; burst)</text>
+              <text x="200" y="26" fill="#38bdf8" font-size="12" font-family="sans-serif">UFB (suspended in water)</text>
+              <rect x="20" y="40" width="150" height="130" rx="10" fill="#0e1a26" stroke="#3f4754" stroke-width="1.2"/>
+              <circle cx="60" cy="60" r="3" fill="none" stroke="#6b7280"/><path d="M60 70 v-14" stroke="#6b7280" stroke-width="1" marker-end="url(#up)"/>
+              <circle cx="95" cy="95" r="6" fill="none" stroke="#9ca3af"/><path d="M95 110 v-18" stroke="#6b7280" stroke-width="1"/>
+              <circle cx="130" cy="135" r="9" fill="none" stroke="#9ca3af"/><path d="M130 152 v-20" stroke="#6b7280" stroke-width="1"/>
+              <text x="95" y="58" fill="#6b7280" font-size="14" text-anchor="middle">✕</text>
+              <rect x="200" y="40" width="150" height="130" rx="10" fill="#0e1a26" stroke="#235066" stroke-width="1.2"/>
+              <g fill="#38bdf8">
+                <circle cx="225" cy="70" r="2.4"/><circle cx="255" cy="60" r="2.4"/><circle cx="290" cy="78" r="2.4"/><circle cx="320" cy="64" r="2.4"/>
+                <circle cx="240" cy="105" r="2.4"/><circle cx="275" cy="115" r="2.4"/><circle cx="310" cy="100" r="2.4"/><circle cx="222" cy="135" r="2.4"/>
+                <circle cx="258" cy="148" r="2.4"/><circle cx="298" cy="140" r="2.4"/><circle cx="330" cy="128" r="2.4"/><circle cx="265" cy="88" r="2.4"/>
+              </g>
+              <defs><marker id="up" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0 6 L3 0 L6 6" fill="#6b7280"/></marker></defs>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">02 · Long-term stability</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">They don't rise — they linger</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Ordinary bubbles rise quickly and burst, but UFB have almost no buoyancy, so they stay dispersed and stable in water for weeks to months.</p>
+          </div>
+        </article>
+
+        <!-- 3. Large specific surface area -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:3">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Specific surface area diagram">
+              <text x="20" y="26" fill="#9ca3af" font-size="12" font-family="sans-serif">Same volume, more surface area</text>
+              <circle cx="75" cy="110" r="42" fill="#38bdf8" fill-opacity="0.10" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.5"/>
+              <text x="75" y="165" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">1 large bubble</text>
+              <path d="M135 110 h44" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#ar)"/>
+              <text x="157" y="100" fill="#38bdf8" font-size="11" text-anchor="middle" font-family="sans-serif">split</text>
+              <g fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.2">
+                <circle cx="215" cy="80" r="11"/><circle cx="245" cy="72" r="11"/><circle cx="278" cy="86" r="11"/><circle cx="308" cy="74" r="11"/>
+                <circle cx="228" cy="112" r="11"/><circle cx="260" cy="120" r="11"/><circle cx="294" cy="110" r="11"/><circle cx="322" cy="104" r="11"/>
+                <circle cx="215" cy="144" r="11"/><circle cx="248" cy="150" r="11"/><circle cx="284" cy="142" r="11"/><circle cx="315" cy="138" r="11"/>
+              </g>
+              <text x="270" y="178" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">Many small bubbles · surface area ↑↑</text>
+              <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#38bdf8"/></marker></defs>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">03 · Large specific surface area</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">Gas–water contact area surges</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Splitting the same amount of gas into tiny bubbles increases the gas–liquid contact area by hundreds to thousands of times. Gases like oxygen dissolve into water far more readily, raising dissolved-gas efficiency.</p>
+          </div>
+        </article>
+
+        <!-- 4. Negative surface charge -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:4">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Negative charge diagram">
+              <text x="20" y="26" fill="#9ca3af" font-size="12" font-family="sans-serif">Negative surface charge · zeta ≈ −40 mV</text>
+              <circle cx="95" cy="95" r="30" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.6" stroke-width="1.5"/>
+              <circle cx="185" cy="120" r="30" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.6" stroke-width="1.5"/>
+              <g fill="#38bdf8" font-size="12" font-family="sans-serif" text-anchor="middle">
+                <text x="95" y="70">−</text><text x="72" y="100">−</text><text x="118" y="100">−</text><text x="95" y="124">−</text>
+                <text x="185" y="95">−</text><text x="162" y="125">−</text><text x="208" y="125">−</text><text x="185" y="150">−</text>
+              </g>
+              <path d="M128 102 h24" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ar2)"/>
+              <path d="M152 112 h-24" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ar2)"/>
+              <text x="140" y="150" fill="#9ca3af" font-size="10" text-anchor="middle" font-family="sans-serif">Repel → don't coalesce</text>
+              <circle cx="305" cy="80" r="13" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b" stroke-opacity="0.7"/>
+              <text x="305" y="84" fill="#f59e0b" font-size="12" text-anchor="middle">+</text>
+              <path d="M236 110 q40 -20 62 -26" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="1.3" fill="none" marker-end="url(#ar3)"/>
+              <text x="300" y="120" fill="#9ca3af" font-size="10" text-anchor="middle" font-family="sans-serif">Adsorbs contaminants</text>
+              <defs>
+                <marker id="ar2" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L5 3 L0 6" fill="#6b7280"/></marker>
+                <marker id="ar3" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L5 3 L0 6" fill="#f59e0b"/></marker>
+              </defs>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">04 · Negative surface charge</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">They repel each other, but attract contaminants</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">UFB surfaces carry a negative charge (zeta potential of about −40 mV). The bubbles repel one another so they stay stable without coalescing, while attracting positively charged contaminants and particles to aid separation and adsorption.</p>
+          </div>
+        </article>
+
+        <!-- 5. Cleaning · penetration -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:5">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Cleaning penetration diagram">
+              <text x="20" y="26" fill="#9ca3af" font-size="12" font-family="sans-serif">Penetrates fine gaps · physical cleaning</text>
+              <path d="M20 150 H160 V120 Q160 108 148 108 H120 Q108 108 108 122 V150 H340 V150" fill="#11202e" stroke="#3f4754" stroke-width="1.4"/>
+              <text x="250" y="170" fill="#6b7280" font-size="10" text-anchor="middle" font-family="sans-serif">Surface · micro-texture</text>
+              <ellipse cx="128" cy="92" rx="14" ry="10" fill="#a16207" fill-opacity="0.5" stroke="#a16207"/>
+              <text x="128" y="78" fill="#9ca3af" font-size="10" text-anchor="middle" font-family="sans-serif">Contaminant</text>
+              <path d="M128 80 v-26" stroke="#38bdf8" stroke-width="1.4" marker-end="url(#up2)"/>
+              <g fill="#38bdf8">
+                <circle cx="116" cy="132" r="2.6"/><circle cx="140" cy="134" r="2.6"/><circle cx="128" cy="120" r="2.6"/>
+                <circle cx="200" cy="120" r="2.6"/><circle cx="235" cy="110" r="2.6"/><circle cx="270" cy="125" r="2.6"/><circle cx="305" cy="112" r="2.6"/><circle cx="330" cy="124" r="2.6"/>
+              </g>
+              <text x="270" y="98" fill="#38bdf8" font-size="10" text-anchor="middle" font-family="sans-serif">UFB lifts contaminants</text>
+              <defs><marker id="up2" markerWidth="7" markerHeight="7" refX="3" refY="0" orient="auto"><path d="M0 7 L3 0 L6 7" fill="#38bdf8"/></marker></defs>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">05 · Cleaning · penetration</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">Removes dirt even in narrow gaps</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Thanks to their ultra-small size and negative charge, UFB penetrate and adsorb onto contaminants in fine gaps and textures that ordinary water struggles to reach, lifting them away. This enables physical cleaning with less detergent.</p>
+          </div>
+        </article>
+
+        <!-- 6. Reactive species on collapse -->
+        <article class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 hover:ring-accent/40 ease-supa" style="--i:6">
+          <div class="diagram rounded-[calc(2rem-0.375rem)] p-4 ring-1 ring-white/5">
+            <svg viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Collapse reactive species diagram">
+              <text x="20" y="26" fill="#9ca3af" font-size="12" font-family="sans-serif">Bubble collapse → reactive oxygen species (radicals)</text>
+              <circle cx="70" cy="110" r="28" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+              <circle cx="150" cy="110" r="16" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M104 110 h22" stroke="#6b7280" stroke-width="1.4" marker-end="url(#ar4)"/>
+              <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round">
+                <path d="M232 110 l26 0"/><path d="M232 110 l20 -16"/><path d="M232 110 l20 16"/><path d="M232 110 l4 -26"/><path d="M232 110 l4 26"/><path d="M232 110 l-22 -10"/><path d="M232 110 l-22 10"/>
+              </g>
+              <circle cx="232" cy="110" r="6" fill="#f59e0b"/>
+              <g fill="#fbbf24" font-size="12" font-family="sans-serif">
+                <text x="276" y="80">·OH</text><text x="286" y="120">O₂⁻</text><text x="258" y="150">Sterilize · oxidize</text>
+              </g>
+              <defs><marker id="ar4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#6b7280"/></marker></defs>
+            </svg>
+          </div>
+          <div class="p-6 pt-5">
+            <span class="text-[12px] font-semibold text-accent">06 · Reactive species on collapse</span>
+            <h3 class="mt-2 text-xl font-bold break-keep-all">Oxidizing, sterilizing action at the moment of collapse</h3>
+            <p class="mt-2.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">When a bubble shrinks and collapses, a locally high energy is released, which can generate reactive oxygen species such as ·OH. This is the principle behind their oxidizing, decomposing, and sterilizing action.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="reveal mt-8 text-[12px] text-zinc-500 leading-relaxed break-keep-all max-w-3xl">※ The properties and values above (e.g., zeta potential ≈ −40 mV, diameter &lt; 1 µm) are explanations based on general academic literature on ultra-fine bubbles. Actual effects and measured values may vary with application conditions such as gas type, water quality, and generation method.</p>
+    </div>
+  </section>
+
+  <!-- BRIDGE / CTA -->
+  <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal rounded-[2rem] bg-gradient-to-br from-zinc-900 to-[#0a1622] ring-1 ring-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight leading-snug break-keep-all"><span class="text-accent">i-UFB</span> is the product that brings these properties to the field</h2>
+          <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">IMB Co., Ltd. designs and manufactures the generating nozzles and engines that stably realize the UFB properties above. We propose the right model and application method for your site — agriculture, livestock, aquaculture, cleaning, water quality improvement, and more.</p>
+        </div>
+        <div class="lg:col-span-4 flex flex-wrap gap-3 lg:justify-end">
+          <a href="/en/ufb/index.html" class="inline-flex items-center gap-3 rounded-full bg-accent text-ink font-semibold px-7 py-3.5 hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_30px_rgba(56,189,248,0.25)] ease-supa">View i-UFB products
+            <span class="w-7 h-7 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></a>
+          <a href="/en/contact/index.html" class="inline-flex items-center gap-3 rounded-full bg-white/5 border border-white/10 text-zinc-200 font-medium px-7 py-3.5 hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] ease-supa">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5">
+          <img src="/assets/img/logo-imb.png" alt="IMB logo" class="h-9 w-9 object-contain rounded-lg" loading="lazy" decoding="async">
+          <span class="font-bold tracking-tight">IMB Co., Ltd.</span>
+        </div>
+        <p class="mt-4 text-[14px] text-zinc-500 leading-relaxed break-keep-all">A technology partner growing together with customers through industrial materials and ultra-fine bubble (UFB) application technology.</p>
+      </div>
+      <div class="md:col-span-4 text-[14px] text-zinc-400 space-y-2.5">
+        <p class="flex items-start gap-2"><iconify-icon icon="solar:map-point-linear" class="text-accent mt-0.5"></iconify-icon>312 Imgok-gil, Saenggeuk-myeon, Eumseong-gun, Chungcheongbuk-do, Korea</p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:phone-linear" class="text-accent"></iconify-icon>TEL +82-43-750-7534 · FAX +82-43-750-7538</p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:letter-linear" class="text-accent"></iconify-icon><a href="mailto:imbcoltd@daum.net" class="hover:text-white ease-supa">imbcoltd@daum.net</a></p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:pen-new-square-linear" class="text-accent"></iconify-icon><a href="https://blog.naver.com/i-ultrafinebubble" target="_blank" rel="noopener" class="hover:text-white ease-supa">Official Blog</a></p>
+      </div>
+      <div class="md:col-span-3 text-[14px] text-zinc-400 flex md:flex-col gap-4 md:gap-2.5 md:items-end">
+        <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
+        <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="/en/ufb-features/index.html" class="text-white">UFB Properties</a>
+        <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
+      </div>
+    </div>
+    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · www.ufb.co.kr</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+    const menu = document.getElementById('mobileMenu');
+    document.getElementById('menuBtn').addEventListener('click', () => menu.classList.remove('hidden'));
+    document.getElementById('menuClose').addEventListener('click', () => menu.classList.add('hidden'));
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+  </script>
+</body>
+</html>
