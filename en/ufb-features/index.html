@@ -41,7 +41,7 @@
       <div class="hidden md:flex items-center gap-7 text-[14px] text-zinc-300">
         <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
         <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
-        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB Lineup</a>
         <a href="/en/ufb-features/index.html" class="text-white font-semibold">UFB Properties</a>
         <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
       </div>
@@ -62,7 +62,7 @@
       <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="Close menu"><iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon></button>
       <a href="/en/about/index.html" class="hover:text-accent ease-supa">About</a>
       <a href="/en/business/index.html" class="hover:text-accent ease-supa">Materials</a>
-      <a href="/en/ufb/index.html" class="hover:text-accent ease-supa">i-UFB Solutions</a>
+      <a href="/en/ufb/index.html" class="hover:text-accent ease-supa">i-UFB Lineup</a>
       <a href="/en/ufb-features/index.html" class="text-accent">UFB Properties</a>
       <a href="/en/contact/index.html" class="hover:text-accent ease-supa">Location · Contact</a>
       <a href="/ufb-features/index.html" class="text-base text-zinc-400 hover:text-accent ease-supa">한국어로 보기</a>
@@ -254,6 +254,73 @@
     </div>
   </section>
 
+  <!-- MORE UFB TECH -->
+  <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">More about UFB</span>
+        <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">UFB, in more depth</h2>
+        <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">A general-technology overview of bubble classification, generation methods, measurement, and application principles.</p>
+      </div>
+
+      <!-- Classification -->
+      <h3 class="reveal mt-12 text-lg font-bold text-accent tracking-wide">Classification by bubble size</h3>
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:1">
+          <p class="text-accent text-sm font-semibold">Milli-bubble</p>
+          <h4 class="mt-2 text-xl font-bold">&gt; 1 mm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Ordinary visible bubbles. Their large buoyancy makes them rise quickly to the surface and burst.</p>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:2">
+          <p class="text-accent text-sm font-semibold">Micro-bubble</p>
+          <h4 class="mt-2 text-xl font-bold">1 – 100 µm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Rise slowly while shrinking and dissolving. They appear milky white and are used for cleaning and dissolved-oxygen enhancement.</p>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 ring-accent/30" style="--i:3">
+          <p class="text-accent text-sm font-semibold">Ultra-fine bubble (UFB)</p>
+          <h4 class="mt-2 text-xl font-bold">&lt; 1 µm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">Almost no buoyancy, so they stay suspended in water for a long time. They scatter little light (appearing clear) and repel one another via their negative charge, remaining stable.</p>
+        </div>
+      </div>
+
+      <!-- Generation · Measurement -->
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1">
+          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7 md:p-8">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:settings-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 text-xl font-bold break-keep-all">How UFB are generated</h3>
+            <ul class="mt-4 space-y-3 text-zinc-400 text-[14px] leading-relaxed">
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Pressurized dissolution</b> — gas is super-saturated into water under high pressure, then rapidly depressurized to precipitate fine bubbles.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Gas shear · cavitation</b> — strong vortices and pressure changes in a nozzle or impeller break bubbles into tiny ones. i-UFB nozzles and engines use this method.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Porous dispersion</b> — gas is passed through the micro-pores of a porous membrane or ceramic to disperse it.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2">
+          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7 md:p-8">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:chart-2-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 text-xl font-bold break-keep-all">Measurement · evaluation</h3>
+            <ul class="mt-4 space-y-3 text-zinc-400 text-[14px] leading-relaxed">
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Size &amp; number concentration</b> — nanoparticle tracking analysis (NTA) and dynamic light scattering (DLS) measure distributions on the order of hundreds of millions to billions of bubbles per mL.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Zeta potential</b> — surface charge is measured to evaluate dispersion stability; it is negative in near-neutral water.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">Dissolved gas · ORP</b> — changes in dissolved oxygen (DO) and oxidation-reduction potential (ORP) indirectly confirm treatment effects.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application principles -->
+      <h3 class="reveal mt-12 text-lg font-bold text-accent tracking-wide">How it works by field</h3>
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:1"><iconify-icon icon="solar:leaf-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">Agriculture · hydroponics</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">Raises dissolved oxygen in irrigation water, supporting root respiration and nutrient uptake to improve the growth environment.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:2"><iconify-icon icon="solar:cow-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">Livestock · aquaculture</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">Replenishes dissolved oxygen in drinking and rearing water and helps manage water quality and odor.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:3"><iconify-icon icon="solar:washing-machine-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">Cleaning · surface</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">Penetrates fine gaps to physically lift contaminants away, enabling cleaning with less detergent.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:4"><iconify-icon icon="solar:waterdrop-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">Water treatment</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">Supports water-quality improvement in reservoirs and purification processes through flotation separation and oxygen supply.</p></div>
+      </div>
+      <p class="reveal mt-6 text-[12px] text-zinc-500 leading-relaxed break-keep-all max-w-3xl">※ This summarizes general technical and academic literature on ultra-fine bubbles. Actual effects and values may vary with gas type, water quality, generation method, and application conditions.</p>
+    </div>
+  </section>
+
   <!-- BRIDGE / CTA -->
   <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -290,7 +357,7 @@
       <div class="md:col-span-3 text-[14px] text-zinc-400 flex md:flex-col gap-4 md:gap-2.5 md:items-end">
         <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
         <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
-        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB Lineup</a>
         <a href="/en/ufb-features/index.html" class="text-white">UFB Properties</a>
         <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
       </div>
