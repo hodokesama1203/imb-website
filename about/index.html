@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회사소개 | ㈜아이엠비</title>
-  <meta name="description" content="㈜아이엠비는 산업용 소재와 응용 기술을 기반으로 고객사의 생산성 향상, 품질 안정화, 원가 절감에 기여하는 기술 중심 기업입니다.">
+  <meta name="description" content="㈜아이엠비는 산업용 소재와 응용 기술을 기반으로 고객사의 생산성 향상, 품질 안정화, 원가 절감에 기여하는 기술 중심 기업입니다. 연혁·특허·인증 정보를 확인하세요.">
+  <link rel="alternate" hreflang="ko" href="https://www.ufb.co.kr/about/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.ufb.co.kr/en/about/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.ufb.co.kr/about/index.html">
   <link rel="icon" type="image/png" href="../assets/img/logo-imb.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
@@ -38,11 +41,15 @@
       <div class="hidden md:flex items-center gap-7 text-[14px] text-zinc-300">
         <a href="index.html" class="text-white font-semibold">회사소개</a>
         <a href="../business/index.html" class="hover:text-white ease-supa">소재 솔루션</a>
-        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB 라인업</a>
         <a href="../ufb-features/index.html" class="hover:text-white ease-supa">UFB 특성</a>
         <a href="../contact/index.html" class="hover:text-white ease-supa">오시는 길</a>
       </div>
       <div class="flex items-center gap-2">
+        <div class="hidden sm:flex items-center rounded-full bg-white/5 border border-white/10 text-[12px] font-semibold overflow-hidden">
+          <span class="px-3 py-1.5 bg-accent text-ink">KR</span>
+          <a href="/en/about/index.html" class="px-3 py-1.5 text-zinc-400 hover:text-white ease-supa">EN</a>
+        </div>
         <a href="../contact/index.html" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-accent text-ink font-semibold text-[14px] px-5 py-2.5 hover:scale-[1.02] active:scale-[0.98] ease-supa">문의하기
           <span class="w-6 h-6 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></a>
         <button id="menuBtn" class="md:hidden w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="메뉴 열기"><iconify-icon icon="solar:hamburger-menu-linear" class="text-xl"></iconify-icon></button>
@@ -55,30 +62,33 @@
       <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="메뉴 닫기"><iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon></button>
       <a href="index.html" class="text-accent">회사소개</a>
       <a href="../business/index.html" class="hover:text-accent ease-supa">소재 솔루션</a>
-      <a href="../ufb/index.html" class="hover:text-accent ease-supa">i-UFB 솔루션</a>
+      <a href="../ufb/index.html" class="hover:text-accent ease-supa">i-UFB 라인업</a>
       <a href="../ufb-features/index.html" class="hover:text-accent ease-supa">UFB 특성</a>
       <a href="../contact/index.html" class="hover:text-accent ease-supa">오시는 길 · 문의</a>
+      <a href="/en/about/index.html" class="text-base text-zinc-400 hover:text-accent ease-supa">English</a>
     </div>
   </div>
 
   <!-- HERO -->
-  <section class="pt-40 pb-16 md:pt-48 md:pb-24">
+  <section class="pt-40 pb-12 md:pt-48 md:pb-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 reveal in">
         <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">About IMB</span>
         <h1 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-keep-all">산업 현장의 문제를<br>기술로 해결하는 기업</h1>
         <p class="mt-7 text-base md:text-lg text-zinc-400 leading-relaxed break-keep-all">㈜아이엠비는 산업용 소재와 응용 기술을 기반으로 고객사의 생산성 향상, 품질 안정화, 원가 절감에 기여하는 기술 중심 기업입니다. 자동차 소재, 산업용 필터, 초미세기포(UFB) 솔루션 등 다양한 산업 분야에서 축적한 경험을 바탕으로, 단순한 제품 공급을 넘어 현장 조건에 맞는 실질적인 해결책을 제공합니다.</p>
-        <p class="mt-4 text-base md:text-lg text-zinc-400 leading-relaxed break-keep-all">우리는 고객의 공정과 사용 환경을 먼저 이해하고, 그에 적합한 소재·장비·서비스를 제안합니다. 이를 통해 고객이 더 안정적이고 효율적인 생산 체계를 구축할 수 있도록 지원합니다.</p>
+        <div class="mt-8 grid grid-cols-3 gap-6 max-w-md">
+          <div><p class="text-2xl md:text-3xl font-bold text-white">2020</p><p class="mt-1 text-[13px] text-zinc-500">설립 연도</p></div>
+          <div><p class="text-2xl md:text-3xl font-bold text-white">16<span class="text-accent">건</span></p><p class="mt-1 text-[13px] text-zinc-500">특허 출원·등록</p></div>
+          <div><p class="text-2xl md:text-3xl font-bold text-white">2<span class="text-accent">건</span></p><p class="mt-1 text-[13px] text-zinc-500">국제 품질인증</p></div>
+        </div>
       </div>
       <div class="lg:col-span-5 reveal in" style="--i:2">
         <div class="rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5 float-slow">
           <div class="rounded-[calc(2rem-0.375rem)] overflow-hidden bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
-            <!-- 데스크톱: 동영상 -->
             <video class="hidden md:block w-full h-auto object-cover" autoplay muted loop playsinline preload="metadata" poster="../assets/img/products/i40t.jpg">
               <source src="../assets/main.mp4" type="video/mp4">
               <img src="../assets/img/products/i40t.jpg" alt="i-UFB 엔진" class="w-full h-auto object-cover">
             </video>
-            <!-- 스마트폰: 대표 이미지 -->
             <img src="../assets/img/products/i40t.jpg" alt="i-UFB 엔진 대표 이미지" class="block md:hidden w-full h-auto object-cover" loading="lazy" decoding="async">
           </div>
         </div>
@@ -86,116 +96,307 @@
     </div>
   </section>
 
-  <!-- PHILOSOPHY SPLIT -->
-  <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5">
-        <div class="rounded-[calc(2rem-0.375rem)] overflow-hidden">
-          <img src="../assets/img/products/i6t.jpg" alt="아이엠비 i-UFB 정밀 가공 노즐" class="w-full object-cover" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="reveal" style="--i:1">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">고객과 함께 성장하는<br>기술 파트너</h2>
-        <p class="mt-5 text-zinc-400 leading-relaxed break-keep-all">㈜아이엠비는 고객의 문제를 함께 분석하고, 해결 가능한 방법을 제안하며, 실제 적용까지 함께 검토하는 기술 파트너를 지향합니다. 앞으로도 지속적인 기술 개발과 현장 중심의 솔루션을 통해 고객의 경쟁력 향상에 기여하겠습니다.</p>
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
-          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:magnifer-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 분석</p></div>
-          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:lightbulb-bolt-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 제안</p></div>
-          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:hand-shake-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 적용</p></div>
-        </div>
-      </div>
+  <!-- SUB TABS -->
+  <div class="sticky top-[84px] z-30 flex justify-center px-4">
+    <div class="w-full max-w-3xl rounded-full backdrop-blur-xl bg-white/[0.06] border border-white/10 p-1.5 flex items-center gap-1 overflow-x-auto">
+      <button data-tab="overview" class="flex-1 whitespace-nowrap rounded-full px-4 py-2.5 text-[14px] font-semibold ease-supa">개요</button>
+      <button data-tab="history" class="flex-1 whitespace-nowrap rounded-full px-4 py-2.5 text-[14px] font-semibold ease-supa">연혁</button>
+      <button data-tab="patents" class="flex-1 whitespace-nowrap rounded-full px-4 py-2.5 text-[14px] font-semibold ease-supa">특허 · 상표</button>
+      <button data-tab="certs" class="flex-1 whitespace-nowrap rounded-full px-4 py-2.5 text-[14px] font-semibold ease-supa">인증 · 수상</button>
     </div>
-  </section>
+  </div>
 
-  <!-- STRENGTHS -->
-  <section class="py-20 md:py-28 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-2xl">
-        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Our Strengths</span>
-        <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">우리의 강점</h2>
-      </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1">
-          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
-            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:buildings-2-bold-duotone"></iconify-icon></div>
-            <h3 class="mt-5 text-xl font-bold break-keep-all">현장을 이해하는 기술력</h3>
-            <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">실험실 중심의 기술이 아니라 실제 산업 현장에서 작동하는 기술을 중요하게 생각합니다. 생산 조건, 품질 기준, 원가 구조를 함께 고려해 현실적으로 적용 가능한 솔루션을 제공합니다.</p>
+  <!-- ===== PANEL: 개요 ===== -->
+  <div data-panel="overview">
+    <!-- PHILOSOPHY SPLIT -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5">
+          <div class="rounded-[calc(2rem-0.375rem)] overflow-hidden">
+            <img src="../assets/img/products/i6t.jpg" alt="아이엠비 i-UFB 정밀 가공 노즐" class="w-full object-cover" loading="lazy" decoding="async">
           </div>
         </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2">
-          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
-            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:graph-new-up-bold-duotone"></iconify-icon></div>
-            <h3 class="mt-5 text-xl font-bold break-keep-all">다양한 산업 경험</h3>
-            <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">자동차 소재, 필터, 기능성 부직포, 초미세기포 응용 기술 등 여러 산업 분야의 경험을 바탕으로 고객사의 문제를 다각도로 분석합니다.</p>
-          </div>
-        </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:3">
-          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
-            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:ruler-cross-pen-bold-duotone"></iconify-icon></div>
-            <h3 class="mt-5 text-xl font-bold break-keep-all">맞춤형 제안</h3>
-            <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">표준 제품만을 일방적으로 공급하지 않습니다. 고객의 사용 목적과 현장 조건에 따라 최적의 사양과 적용 방식을 함께 찾아갑니다.</p>
+        <div class="reveal" style="--i:1">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">고객과 함께 성장하는<br>기술 파트너</h2>
+          <p class="mt-5 text-zinc-400 leading-relaxed break-keep-all">㈜아이엠비는 고객의 문제를 함께 분석하고, 해결 가능한 방법을 제안하며, 실제 적용까지 함께 검토하는 기술 파트너를 지향합니다. 앞으로도 지속적인 기술 개발과 현장 중심의 솔루션을 통해 고객의 경쟁력 향상에 기여하겠습니다.</p>
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+            <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:magnifer-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 분석</p></div>
+            <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:lightbulb-bolt-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 제안</p></div>
+            <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 px-4 py-5"><iconify-icon icon="solar:hand-shake-bold-duotone" class="text-2xl text-accent"></iconify-icon><p class="mt-2 text-[14px] font-semibold">함께 적용</p></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FACILITY -->
-  <section class="py-20 md:py-28 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-2xl">
-        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Facility</span>
-        <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">회사 전경 · 생산 설비</h2>
-        <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">고도화된 생산 설비를 기반으로 고품질 제품을 안정적으로 공급합니다.</p>
+    <!-- STRENGTHS -->
+    <section class="py-16 md:py-24 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Our Strengths</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">우리의 강점</h2>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1">
+            <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
+              <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:buildings-2-bold-duotone"></iconify-icon></div>
+              <h3 class="mt-5 text-xl font-bold break-keep-all">현장을 이해하는 기술력</h3>
+              <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">실험실 중심의 기술이 아니라 실제 산업 현장에서 작동하는 기술을 중요하게 생각합니다. 생산 조건, 품질 기준, 원가 구조를 함께 고려해 현실적으로 적용 가능한 솔루션을 제공합니다.</p>
+            </div>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2">
+            <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
+              <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:graph-new-up-bold-duotone"></iconify-icon></div>
+              <h3 class="mt-5 text-xl font-bold break-keep-all">다양한 산업 경험</h3>
+              <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">자동차 소재, 필터, 기능성 부직포, 초미세기포 응용 기술 등 여러 산업 분야의 경험을 바탕으로 고객사의 문제를 다각도로 분석합니다.</p>
+            </div>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:3">
+            <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7">
+              <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:ruler-cross-pen-bold-duotone"></iconify-icon></div>
+              <h3 class="mt-5 text-xl font-bold break-keep-all">맞춤형 제안</h3>
+              <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed break-keep-all">표준 제품만을 일방적으로 공급하지 않습니다. 고객의 사용 목적과 현장 조건에 따라 최적의 사양과 적용 방식을 함께 찾아갑니다.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1">
-          <img src="../assets/img/facility-01.jpg" alt="㈜아이엠비 회사 전경" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async">
-        </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2">
-          <img src="../assets/img/facility-02.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async">
-        </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:3">
-          <img src="../assets/img/facility-03.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async">
-        </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:4">
-          <img src="../assets/img/facility-04.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async">
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- BRANDS -->
-  <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-2xl">
-        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Brands</span>
-        <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">아이엠비의 브랜드</h2>
-      </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:1">
-          <img src="../assets/img/logo-iufb.png" alt="i-UFB 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
-          <div>
-            <h3 class="font-bold text-lg">i-UFB</h3>
-            <p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">초미세기포(Ultra Fine Bubble) 발생 노즐·엔진 및 응용 시스템 브랜드</p>
-          </div>
+    <!-- FACILITY -->
+    <section class="py-16 md:py-24 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Facility</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">회사 전경 · 생산 설비</h2>
+          <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">고도화된 생산 설비를 기반으로 고품질 제품을 안정적으로 공급합니다.</p>
         </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:2">
-          <img src="../assets/img/logo-esion.png" alt="ESION 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
-          <div>
-            <h3 class="font-bold text-lg">ESION</h3>
-            <p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">자동차·건축용 흡음 소재 브랜드</p>
-          </div>
-        </div>
-        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:3">
-          <img src="../assets/img/logo-dustlite.png" alt="DUSTLITE 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
-          <div>
-            <h3 class="font-bold text-lg">DUSTLITE</h3>
-            <p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">산업용 필터 및 부직포 소재 브랜드</p>
-          </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1"><img src="../assets/img/facility-01.jpg" alt="㈜아이엠비 회사 전경" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async"></div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2"><img src="../assets/img/facility-02.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async"></div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:3"><img src="../assets/img/facility-03.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async"></div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:4"><img src="../assets/img/facility-04.jpg" alt="㈜아이엠비 생산 설비" class="rounded-[calc(2rem-0.375rem)] w-full h-auto object-cover" loading="lazy" decoding="async"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="py-16 md:py-24 border-t border-white/5 bg-white/[0.015]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Brands</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">아이엠비의 브랜드</h2>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:1">
+            <img src="../assets/img/logo-iufb.png" alt="i-UFB 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h3 class="font-bold text-lg">i-UFB</h3><p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">초미세기포(Ultra Fine Bubble) 발생 노즐·엔진 및 응용 시스템 브랜드</p></div>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:2">
+            <img src="../assets/img/logo-esion.png" alt="ESION 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h3 class="font-bold text-lg">ESION</h3><p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">자동차·건축용 흡음 소재 브랜드</p></div>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4" style="--i:3">
+            <img src="../assets/img/logo-dustlite.png" alt="DUSTLITE 브랜드 로고" class="h-16 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h3 class="font-bold text-lg">DUSTLITE</h3><p class="mt-1.5 text-zinc-400 text-[14px] leading-relaxed break-keep-all">산업용 필터 및 부직포 소재 브랜드</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PANEL: 연혁 ===== -->
+  <div data-panel="history" class="hidden">
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">History</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">㈜아이엠비 연혁</h2>
+          <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">2020년 설립 이후 소재·필터·초미세기포 분야로 기술과 사업을 확장해 왔습니다.</p>
+        </div>
+
+        <div class="mt-12 space-y-12">
+          <!-- 2026 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2026</p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-accent"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">05</span><span class="text-zinc-200">벤처기업 연장 인증 (혁신 기술 벤처)</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">03</span><span class="text-zinc-200">IATF 16949 품질 인증 획득</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">03</span><span class="text-zinc-200">저차압 HEPA 필터 개발 완료</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">03</span><span class="text-zinc-200">PET 흡음재 납품용 샘플 제시 (현대·기아)</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">02</span><span class="text-zinc-200">혁신성장형 벤처기업 연장</span></li>
+            </ul>
+          </div>
+          <!-- 2025 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2025</p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">12</span><span class="text-zinc-200">백만불 수출의 탑 수상</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">10</span><span class="text-zinc-200">고용량 나노버블 발생 노즐(UFB) 특허 출원 (국내·해외)</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">04</span><span class="text-zinc-200">초미세버블 발생기 ‘i-UFB’ 상표 출원 및 사업 개시</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">01</span><span class="text-zinc-200">유한킴벌리 칼라 마스크 필터 생산 및 납품</span></li>
+            </ul>
+          </div>
+          <!-- 2024 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2024</p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">10</span><span class="text-zinc-200">MB용 핫멜트 부직포 시트 개발 (국내 최초)</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">03</span><span class="text-zinc-200">MB 4호기 신규 구축 (클로렌스 MB 북미 라인)</span></li>
+            </ul>
+          </div>
+          <!-- 2023 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2023</p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">12</span><span class="text-zinc-200">테슬라 M3 휠커버 흡음재 납품 시작</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">10</span><span class="text-zinc-200">ISO 9001 인증 획득 / 테슬라 M3 휠커버 흡음재 시제품 제시</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">06</span><span class="text-zinc-200">수처리 필터 양산 개시 / 혁신 성장형 벤처기업 인증</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">05</span><span class="text-zinc-200">고효율 에어필터 양산 및 고객사 납품 개시</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">04</span><span class="text-zinc-200">기업부설 연구소 설립</span></li>
+            </ul>
+          </div>
+          <!-- 2022 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2022</p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">12</span><span class="text-zinc-200">고내열 유니소재 흡음재 양산라인 투자 결정 / 관련 특허·디자인 다수 출원</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">06</span><span class="text-zinc-200">자동차용 흡음재 ‘ESION’, 필터미디어 ‘DUSTLITE’ 상표 등록</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">03</span><span class="text-zinc-200">고내열 유니소재 흡음재 국내 최초 개발 성공</span></li>
+            </ul>
+          </div>
+          <!-- 2020–2021 -->
+          <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <div class="md:col-span-2"><p class="text-2xl font-bold text-accent">2020<span class="text-zinc-600 text-lg">–21</span></p></div>
+            <ul class="md:col-span-10 space-y-3 border-l border-white/10 pl-6">
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">21.03</span><span class="text-zinc-200">KF94 필터 판매 개시</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">20.12</span><span class="text-zinc-200">MB 생산라인 3·4호기 설치</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">20.10</span><span class="text-zinc-200">KF94 마스크 초도품 생산</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-white/30"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">20.09</span><span class="text-zinc-200">MB 생산라인 1·2호기 설치</span></li>
+              <li class="relative"><span class="absolute -left-[1.65rem] top-2 w-2.5 h-2.5 rounded-full bg-accent"></span><span class="text-zinc-500 text-[13px] font-semibold mr-2">20.08</span><span class="text-white font-semibold">㈜아이엠비 설립</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PANEL: 특허 · 상표 ===== -->
+  <div data-panel="patents" class="hidden">
+    <section class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Patents &amp; Trademarks</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">특허 · 상표 현황</h2>
+          <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">필터·소재·초미세기포 분야의 자체 기술력을 특허로 보호하고 있습니다. 일부 소재 특허는 ㈜아이엠비와 ㈜익성이 공동 권리자로 등록되어 있습니다.</p>
+        </div>
+
+        <!-- 특허 표 -->
+        <div class="reveal mt-10 rounded-[1.5rem] bg-white/5 ring-1 ring-white/10 p-1.5">
+          <div class="overflow-x-auto rounded-[calc(1.5rem-0.375rem)]">
+            <table class="w-full min-w-[760px] text-[13px] text-left border-collapse">
+              <thead>
+                <tr class="bg-white/[0.05] text-zinc-300">
+                  <th class="px-3 py-3 font-semibold whitespace-nowrap">No.</th>
+                  <th class="px-3 py-3 font-semibold">발명의 명칭</th>
+                  <th class="px-3 py-3 font-semibold whitespace-nowrap">출원일</th>
+                  <th class="px-3 py-3 font-semibold whitespace-nowrap">등록일</th>
+                  <th class="px-3 py-3 font-semibold whitespace-nowrap">등록번호</th>
+                  <th class="px-3 py-3 font-semibold whitespace-nowrap">구분</th>
+                </tr>
+              </thead>
+              <tbody class="text-zinc-400">
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">1</td><td class="px-3 py-2.5 text-zinc-200">항균 및 항바이러스 필터 여재의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2022.11.04</td><td class="px-3 py-2.5 whitespace-nowrap">2023.10.27</td><td class="px-3 py-2.5 whitespace-nowrap">10-2596613</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">2</td><td class="px-3 py-2.5 text-zinc-200">멜트블로운 설비용 포밍 테이블</td><td class="px-3 py-2.5 whitespace-nowrap">2022.11.09</td><td class="px-3 py-2.5 whitespace-nowrap">2025.10.31</td><td class="px-3 py-2.5 whitespace-nowrap">10-2881805</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">3</td><td class="px-3 py-2.5 text-zinc-200">멜트블로운 설비용 드라이 오븐</td><td class="px-3 py-2.5 whitespace-nowrap">2022.11.14</td><td class="px-3 py-2.5 whitespace-nowrap">2025.11.05</td><td class="px-3 py-2.5 whitespace-nowrap">10-2883489</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">4</td><td class="px-3 py-2.5 text-zinc-200">부직포 핫멜트 및 이의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2024.12.18</td><td class="px-3 py-2.5 whitespace-nowrap">–</td><td class="px-3 py-2.5 whitespace-nowrap">10-2024-0190501</td><td class="px-3 py-2.5"><span class="rounded-full bg-white/10 text-zinc-300 px-2 py-0.5 text-[12px]">출원</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">5</td><td class="px-3 py-2.5 text-zinc-200">에틸렌 비닐 아세테이트 멜트블로운 부직포 및 이의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2025.06.10</td><td class="px-3 py-2.5 whitespace-nowrap">–</td><td class="px-3 py-2.5 whitespace-nowrap">10-2025-0075232</td><td class="px-3 py-2.5"><span class="rounded-full bg-white/10 text-zinc-300 px-2 py-0.5 text-[12px]">출원</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">6</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 니트 활성탄소섬유 원단의 제조 방법 및 이로부터 제조된 셀룰로오스 니트 활성탄소섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.10</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.20</td><td class="px-3 py-2.5 whitespace-nowrap">10-2651010</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">7</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 니트 탄소섬유 원단의 제조 방법, 셀룰로오스 니트 탄소섬유 원단, 흑연화 섬유 원단의 제조 방법 및 흑연화 섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.10</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.20</td><td class="px-3 py-2.5 whitespace-nowrap">10-2651011</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">8</td><td class="px-3 py-2.5 text-zinc-200">탄소섬유 함침 복합소재 및 이의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.13</td><td class="px-3 py-2.5 whitespace-nowrap">2024.01.29</td><td class="px-3 py-2.5 whitespace-nowrap">10-2632167</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">9</td><td class="px-3 py-2.5 text-zinc-200">탄소섬유 복합소재 및 이의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.13</td><td class="px-3 py-2.5 whitespace-nowrap">2023.06.01</td><td class="px-3 py-2.5 whitespace-nowrap">10-2540412</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">10</td><td class="px-3 py-2.5 text-zinc-200">PET 멜트블로운 섬유웹 제조장치 및 이를 이용한 PET 멜트블로운 섬유웹 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.28</td><td class="px-3 py-2.5 whitespace-nowrap">–</td><td class="px-3 py-2.5 whitespace-nowrap">10-2023-0040425</td><td class="px-3 py-2.5"><span class="rounded-full bg-white/10 text-zinc-300 px-2 py-0.5 text-[12px]">출원</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">11</td><td class="px-3 py-2.5 text-zinc-200">성형성이 향상된 흡음재 및 이의 제조방법</td><td class="px-3 py-2.5 whitespace-nowrap">2023.03.28</td><td class="px-3 py-2.5 whitespace-nowrap">2025.05.30</td><td class="px-3 py-2.5 whitespace-nowrap">10-2816812</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">12</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 직물 활성탄소섬유 원단의 제조 방법 및 이로부터 제조된 셀룰로오스 직물 활성탄소섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.19</td><td class="px-3 py-2.5 whitespace-nowrap">2024.09.12</td><td class="px-3 py-2.5 whitespace-nowrap">10-2707972</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">13</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 니들펀칭부직포 활성탄소섬유 원단의 제조 방법 및 이로부터 제조된 셀룰로오스 니들펀칭부직포 활성탄소섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.19</td><td class="px-3 py-2.5 whitespace-nowrap">2024.09.12</td><td class="px-3 py-2.5 whitespace-nowrap">10-2707973</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">14</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 직물 탄소섬유 원단의 제조 방법, 셀룰로오스 직물 탄소섬유 원단, 흑연화 섬유 원단의 제조 방법 및 흑연화 섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.19</td><td class="px-3 py-2.5 whitespace-nowrap">2024.09.12</td><td class="px-3 py-2.5 whitespace-nowrap">10-2707970</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">15</td><td class="px-3 py-2.5 text-zinc-200">셀룰로오스 니들펀칭부직포 탄소섬유 원단의 제조 방법, 셀룰로오스 니들펀칭부직포 탄소섬유 원단, 흑연화 섬유 원단의 제조 방법 및 흑연화 섬유 원단</td><td class="px-3 py-2.5 whitespace-nowrap">2024.03.19</td><td class="px-3 py-2.5 whitespace-nowrap">2024.09.12</td><td class="px-3 py-2.5 whitespace-nowrap">10-2707971</td><td class="px-3 py-2.5"><span class="rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[12px]">등록</span></td></tr>
+                <tr class="border-t border-white/5 hover:bg-white/[0.02]"><td class="px-3 py-2.5 text-center">16</td><td class="px-3 py-2.5 text-zinc-200">해양생물자원을 이용한 활성탄소의 제조방법 및 이로부터 제조된 활성탄소</td><td class="px-3 py-2.5 whitespace-nowrap">2025.04.09</td><td class="px-3 py-2.5 whitespace-nowrap">–</td><td class="px-3 py-2.5 whitespace-nowrap">10-2025-0045960</td><td class="px-3 py-2.5"><span class="rounded-full bg-white/10 text-zinc-300 px-2 py-0.5 text-[12px]">출원</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="reveal mt-4 text-[12px] text-zinc-500 break-keep-all">※ 등록 11건 · 출원 5건 (2026년 기준). 등록·출원 현황은 변동될 수 있으며, 상세 공보는 특허청 KIPRIS에서 확인하실 수 있습니다.</p>
+
+        <!-- 상표 -->
+        <h3 class="reveal mt-16 text-2xl font-bold tracking-tight">등록 상표</h3>
+        <div class="reveal mt-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4">
+            <img src="../assets/img/logo-iufb.png" alt="i-UFB 상표" class="h-14 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h4 class="font-bold text-lg">i-UFB</h4><p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">초미세버블 발생기 브랜드 · 상표 출원 (2025)</p></div>
+          </div>
+          <div class="rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4">
+            <img src="../assets/img/logo-esion.png" alt="ESION 상표" class="h-14 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h4 class="font-bold text-lg">ESION</h4><p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">자동차용 흡음재 브랜드 · 상표 등록 (2022)</p></div>
+          </div>
+          <div class="rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 flex flex-col items-start gap-4">
+            <img src="../assets/img/logo-dustlite.png" alt="DUSTLITE 상표" class="h-14 object-contain rounded-xl" loading="lazy" decoding="async">
+            <div><h4 class="font-bold text-lg">DUSTLITE</h4><p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">필터미디어 브랜드 · 상표 등록 (2022)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PANEL: 인증 · 수상 ===== -->
+  <div data-panel="certs" class="hidden">
+    <section class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Certifications &amp; Awards</span>
+          <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">인증 · 수상</h2>
+          <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">국제 품질경영 시스템과 기술·수출 성과를 공인기관으로부터 인정받았습니다.</p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:1">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:wheel-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">IATF 16949 : 2016</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">자동차 품질경영 시스템 인증 (흡음재 제조)</p>
+            <p class="mt-2 text-[12px] text-zinc-500">인증기관 NQA · IATF Cert. 0597111<br>발급 2026.02.03 · 유효 ~2029.02.02</p>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:2">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:medal-ribbons-star-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">KS Q ISO 9001 : 2015</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">품질경영 시스템 인증 (자동차용 흡음재·산업용 필터 제조)</p>
+            <p class="mt-2 text-[12px] text-zinc-500">인증기관 kiwa · Reg. KQ 233272<br>발급 2023.08.30 · 유효 ~2026.08.29</p>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:3">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:rocket-2-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">벤처기업 확인서</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">혁신성장유형 · 벤처기업확인기관</p>
+            <p class="mt-2 text-[12px] text-zinc-500">최초 2023 · 연장 유효 2026.05.31 ~ 2029.05.30</p>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:4">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:test-tube-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">기업부설 연구소</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">한국산업기술진흥협회 인정</p>
+            <p class="mt-2 text-[12px] text-zinc-500">제2023111939호 · 최초 인정 2023.04.13</p>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:5">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:global-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">원산지인증수출자 (AEX)</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">한-EU · 한-중국 FTA · 서울세관</p>
+            <p class="mt-2 text-[12px] text-zinc-500">인증번호 010-23-200536 · 2023.11.21</p>
+          </div>
+          <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:6">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:cup-star-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 font-bold text-lg">백만불 수출의 탑</h3>
+            <p class="mt-1.5 text-zinc-400 text-[14px] break-keep-all">제62회 무역의 날 · 대통령 표창</p>
+            <p class="mt-2 text-[12px] text-zinc-500">2025.12.05</p>
+          </div>
+        </div>
+        <p class="reveal mt-6 text-[12px] text-zinc-500 break-keep-all">※ 상기 인증·수상은 공인기관 발급 자료에 기반합니다. 인증서 원본 이미지는 추후 갤러리로 추가할 수 있습니다.</p>
+      </div>
+    </section>
+  </div>
 
   <!-- CTA -->
   <section class="py-24 md:py-32 border-t border-white/5 relative overflow-hidden">
@@ -205,7 +406,7 @@
       <div class="mt-9 flex flex-wrap justify-center gap-4">
         <a href="../contact/index.html" class="inline-flex items-center gap-3 rounded-full bg-accent text-ink font-semibold text-base px-8 py-4 hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_30px_rgba(56,189,248,0.25)] ease-supa">문의하기
           <span class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon></span></a>
-        <a href="../ufb/index.html" class="inline-flex items-center gap-3 rounded-full bg-white/5 border border-white/10 text-zinc-200 font-medium text-base px-8 py-4 hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] ease-supa">i-UFB 솔루션 보기</a>
+        <a href="../ufb/index.html" class="inline-flex items-center gap-3 rounded-full bg-white/5 border border-white/10 text-zinc-200 font-medium text-base px-8 py-4 hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] ease-supa">i-UFB 라인업 보기</a>
       </div>
     </div>
   </section>
@@ -229,12 +430,12 @@
       <div class="md:col-span-3 text-[14px] text-zinc-400 flex md:flex-col gap-4 md:gap-2.5 md:items-end">
         <a href="index.html" class="text-white">회사소개</a>
         <a href="../business/index.html" class="hover:text-white ease-supa">소재 솔루션</a>
-        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB 라인업</a>
         <a href="../ufb-features/index.html" class="hover:text-white ease-supa">UFB 특성</a>
         <a href="../contact/index.html" class="hover:text-white ease-supa">오시는 길</a>
       </div>
     </div>
-    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · www.ufb.co.kr</p>
+    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · <a href="/sitemap/index.html" class="hover:text-zinc-400 ease-supa">사이트맵</a> · www.ufb.co.kr</p>
   </footer>
 
   <script>
@@ -243,6 +444,26 @@
     const menu = document.getElementById('mobileMenu');
     document.getElementById('menuBtn').addEventListener('click', () => menu.classList.remove('hidden'));
     document.getElementById('menuClose').addEventListener('click', () => menu.classList.add('hidden'));
+
+    // Sub-tabs
+    const tabs = document.querySelectorAll('[data-tab]');
+    const panels = document.querySelectorAll('[data-panel]');
+    function showTab(name) {
+      tabs.forEach(t => {
+        const on = t.dataset.tab === name;
+        t.classList.toggle('bg-accent', on);
+        t.classList.toggle('text-ink', on);
+        t.classList.toggle('text-zinc-300', !on);
+        t.classList.toggle('hover:text-white', !on);
+      });
+      panels.forEach(p => {
+        const on = p.dataset.panel === name;
+        p.classList.toggle('hidden', !on);
+        if (on) p.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+      });
+    }
+    tabs.forEach(t => t.addEventListener('click', () => showTab(t.dataset.tab)));
+    showTab('overview');
   </script>
 </body>
 </html>
