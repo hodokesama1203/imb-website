@@ -38,11 +38,15 @@
       <div class="hidden md:flex items-center gap-7 text-[14px] text-zinc-300">
         <a href="../about/index.html" class="hover:text-white ease-supa">회사소개</a>
         <a href="../business/index.html" class="hover:text-white ease-supa">소재 솔루션</a>
-        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB 라인업</a>
         <a href="index.html" class="text-white font-semibold">UFB 특성</a>
         <a href="../contact/index.html" class="hover:text-white ease-supa">오시는 길</a>
       </div>
       <div class="flex items-center gap-2">
+        <div class="hidden sm:flex items-center rounded-full bg-white/5 border border-white/10 text-[12px] font-semibold overflow-hidden">
+          <span class="px-3 py-1.5 bg-accent text-ink">KR</span>
+          <a href="/en/ufb-features/index.html" class="px-3 py-1.5 text-zinc-400 hover:text-white ease-supa">EN</a>
+        </div>
         <a href="../contact/index.html" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-accent text-ink font-semibold text-[14px] px-5 py-2.5 hover:scale-[1.02] active:scale-[0.98] ease-supa">문의하기
           <span class="w-6 h-6 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></a>
         <button id="menuBtn" class="md:hidden w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="메뉴 열기"><iconify-icon icon="solar:hamburger-menu-linear" class="text-xl"></iconify-icon></button>
@@ -55,9 +59,10 @@
       <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="메뉴 닫기"><iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon></button>
       <a href="../about/index.html" class="hover:text-accent ease-supa">회사소개</a>
       <a href="../business/index.html" class="hover:text-accent ease-supa">소재 솔루션</a>
-      <a href="../ufb/index.html" class="hover:text-accent ease-supa">i-UFB 솔루션</a>
+      <a href="../ufb/index.html" class="hover:text-accent ease-supa">i-UFB 라인업</a>
       <a href="index.html" class="text-accent">UFB 특성</a>
       <a href="../contact/index.html" class="hover:text-accent ease-supa">오시는 길 · 문의</a>
+      <a href="/en/ufb-features/index.html" class="text-base text-zinc-400 hover:text-accent ease-supa">English</a>
     </div>
   </div>
 
@@ -246,6 +251,73 @@
     </div>
   </section>
 
+  <!-- MORE UFB TECH -->
+  <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">More about UFB</span>
+        <h2 class="mt-5 text-3xl md:text-4xl font-bold tracking-tight leading-snug break-keep-all">UFB, 조금 더 깊이</h2>
+        <p class="mt-4 text-zinc-400 leading-relaxed break-keep-all">초미세기포의 분류, 생성 방식, 측정 방법, 응용 원리를 일반 기술 관점에서 정리했습니다.</p>
+      </div>
+
+      <!-- 기포 분류 -->
+      <h3 class="reveal mt-12 text-lg font-bold text-accent tracking-wide">기포 크기에 따른 분류</h3>
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:1">
+          <p class="text-accent text-sm font-semibold">밀리버블 (Milli-bubble)</p>
+          <h4 class="mt-2 text-xl font-bold">&gt; 1 mm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">눈에 보이는 일반 기포입니다. 부력이 커서 수면으로 빠르게 떠올라 곧 터집니다.</p>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:2">
+          <p class="text-accent text-sm font-semibold">마이크로버블 (Micro-bubble)</p>
+          <h4 class="mt-2 text-xl font-bold">1 – 100 µm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">물속에서 서서히 상승하며 수축·소멸합니다. 흰 우윳빛으로 보이며 세정·용존산소 향상에 활용됩니다.</p>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7 ring-accent/30" style="--i:3">
+          <p class="text-accent text-sm font-semibold">울트라파인버블 (UFB)</p>
+          <h4 class="mt-2 text-xl font-bold">&lt; 1 µm</h4>
+          <p class="mt-3 text-zinc-400 text-[14px] leading-relaxed break-keep-all">부력이 거의 없어 수중에 장기간 부유합니다. 빛 산란이 적어 투명하며, 음전하로 서로 반발해 안정적으로 존재합니다.</p>
+        </div>
+      </div>
+
+      <!-- 생성 · 측정 -->
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:1">
+          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7 md:p-8">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:settings-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 text-xl font-bold break-keep-all">UFB 생성 방식</h3>
+            <ul class="mt-4 space-y-3 text-zinc-400 text-[14px] leading-relaxed">
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">가압 용해식</b> — 높은 압력으로 기체를 물에 과포화 용해시킨 뒤 급격히 감압해 미세기포를 석출합니다.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">기체 전단·캐비테이션</b> — 노즐·임펠러에서 강한 와류와 압력 변화로 기포를 잘게 분쇄합니다. i-UFB 노즐·엔진이 이 방식을 사용합니다.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">미세 공극 분산</b> — 다공질 막·세라믹의 미세 구멍으로 기체를 통과시켜 분산합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-1.5" style="--i:2">
+          <div class="h-full rounded-[calc(2rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.12)] p-7 md:p-8">
+            <div class="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl"><iconify-icon icon="solar:chart-2-bold-duotone"></iconify-icon></div>
+            <h3 class="mt-5 text-xl font-bold break-keep-all">측정 · 평가</h3>
+            <ul class="mt-4 space-y-3 text-zinc-400 text-[14px] leading-relaxed">
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">입경·개수 농도</b> — 나노입자 추적분석(NTA), 동적광산란(DLS) 등으로 ㎖당 수억~수십억 개 수준의 기포 분포를 측정합니다.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">제타전위</b> — 표면 전하를 측정해 분산 안정성을 평가합니다. 중성 부근 물에서 음(−)의 값을 가집니다.</span></li>
+              <li class="flex gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-accent mt-0.5 shrink-0"></iconify-icon><span><b class="text-zinc-200">용존가스·ORP</b> — 용존산소(DO), 산화환원전위(ORP) 변화로 처리 효과를 간접 확인합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 응용 원리 -->
+      <h3 class="reveal mt-12 text-lg font-bold text-accent tracking-wide">분야별 작용 원리</h3>
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:1"><iconify-icon icon="solar:leaf-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">농업 · 수경재배</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">관수의 용존산소를 높여 뿌리 호흡과 양분 흡수를 도와 생육 환경을 개선합니다.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:2"><iconify-icon icon="solar:cow-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">축산 · 수산</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">음용수·사육수의 용존산소를 보충하고 수질·악취 관리에 기여합니다.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:3"><iconify-icon icon="solar:washing-machine-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">세정 · 표면처리</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">미세 틈새에 침투해 오염물을 물리적으로 떼어내, 세제 사용을 줄인 세정이 가능합니다.</p></div>
+        <div class="reveal rounded-2xl bg-white/5 ring-1 ring-white/10 p-6" style="--i:4"><iconify-icon icon="solar:waterdrop-bold-duotone" class="text-3xl text-accent"></iconify-icon><h4 class="mt-3 font-bold break-keep-all">수처리 · 환경</h4><p class="mt-1.5 text-zinc-400 text-[13px] leading-relaxed break-keep-all">부상 분리, 산소 공급으로 저수조·정화 공정의 수질 개선을 지원합니다.</p></div>
+      </div>
+      <p class="reveal mt-6 text-[12px] text-zinc-500 leading-relaxed break-keep-all max-w-3xl">※ 본 내용은 초미세기포에 관한 일반 기술·학술 자료를 정리한 것으로, 실제 효과·수치는 기체 종류, 수질, 발생 방식, 적용 조건에 따라 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
   <!-- BRIDGE / CTA -->
   <section class="py-20 md:py-28 border-t border-white/5 bg-white/[0.015]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -282,12 +354,12 @@
       <div class="md:col-span-3 text-[14px] text-zinc-400 flex md:flex-col gap-4 md:gap-2.5 md:items-end">
         <a href="../about/index.html" class="hover:text-white ease-supa">회사소개</a>
         <a href="../business/index.html" class="hover:text-white ease-supa">소재 솔루션</a>
-        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB</a>
+        <a href="../ufb/index.html" class="hover:text-white ease-supa">i-UFB 라인업</a>
         <a href="index.html" class="text-white">UFB 특성</a>
         <a href="../contact/index.html" class="hover:text-white ease-supa">오시는 길</a>
       </div>
     </div>
-    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · www.ufb.co.kr</p>
+    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · <a href="/sitemap/index.html" class="hover:text-zinc-400 ease-supa">사이트맵</a> · www.ufb.co.kr</p>
   </footer>
 
   <script>
