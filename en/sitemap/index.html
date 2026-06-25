@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap | IMB Co., Ltd.</title>
+  <meta name="description" content="Sitemap of the IMB Co., Ltd. website — About, Materials, i-UFB Lineup, UFB Properties, and Location at a glance.">
+  <link rel="alternate" hreflang="ko" href="https://www.ufb.co.kr/sitemap/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.ufb.co.kr/en/sitemap/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.ufb.co.kr/sitemap/index.html">
+  <link rel="icon" type="image/png" href="/assets/img/logo-imb.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+  <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'system-ui', 'sans-serif'] }, colors: { ink: '#070b12', accent: '#38bdf8' } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; } body { word-break: keep-all; }
+    .ease-supa { transition: all .5s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal { opacity: 0; transform: translateY(2rem); filter: blur(4px); }
+    .reveal.in { animation: fadeInUp .9s cubic-bezier(0.16,1,0.3,1) forwards; animation-delay: calc(var(--i, 0) * 90ms); }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+    .mesh { background: radial-gradient(600px 400px at 12% 8%, rgba(56,189,248,0.10), transparent 60%), radial-gradient(700px 500px at 88% 30%, rgba(56,189,248,0.06), transparent 60%); }
+    .noise { position: fixed; inset: 0; z-index: 60; pointer-events: none; opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  </style>
+</head>
+<body class="bg-ink text-zinc-100 antialiased mesh">
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-40 flex justify-center px-4">
+    <nav class="mt-4 w-full max-w-5xl rounded-full backdrop-blur-xl bg-white/[0.06] border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] px-5 sm:px-6 py-3 flex items-center justify-between">
+      <a href="/en/index.html" class="flex items-center gap-2.5">
+        <img src="/assets/img/logo-imb.png" alt="IMB logo" class="h-8 w-8 object-contain rounded-lg">
+        <span class="font-bold tracking-tight text-[15px]">IMB <span class="text-zinc-500 font-medium hidden sm:inline">Co., Ltd.</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[14px] text-zinc-300">
+        <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
+        <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB Lineup</a>
+        <a href="/en/ufb-features/index.html" class="hover:text-white ease-supa">UFB Properties</a>
+        <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:flex items-center rounded-full bg-white/5 border border-white/10 text-[12px] font-semibold overflow-hidden">
+          <a href="/sitemap/index.html" class="px-3 py-1.5 text-zinc-400 hover:text-white ease-supa">KR</a>
+          <span class="px-3 py-1.5 bg-accent text-ink">EN</span>
+        </div>
+        <a href="/en/contact/index.html" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-accent text-ink font-semibold text-[14px] px-5 py-2.5 hover:scale-[1.02] active:scale-[0.98] ease-supa">Contact Us
+          <span class="w-6 h-6 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></a>
+        <button id="menuBtn" class="md:hidden w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="Open menu"><iconify-icon icon="solar:hamburger-menu-linear" class="text-xl"></iconify-icon></button>
+      </div>
+    </nav>
+  </header>
+  <div id="mobileMenu" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 backdrop-blur-3xl bg-ink/90"></div>
+    <div class="relative h-full flex flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center" aria-label="Close menu"><iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon></button>
+      <a href="/en/about/index.html" class="hover:text-accent ease-supa">About</a>
+      <a href="/en/business/index.html" class="hover:text-accent ease-supa">Materials</a>
+      <a href="/en/ufb/index.html" class="hover:text-accent ease-supa">i-UFB Lineup</a>
+      <a href="/en/ufb-features/index.html" class="hover:text-accent ease-supa">UFB Properties</a>
+      <a href="/en/contact/index.html" class="hover:text-accent ease-supa">Location · Contact</a>
+      <a href="/sitemap/index.html" class="text-base text-zinc-400 hover:text-accent ease-supa">한국어로 보기</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="pt-40 pb-10 md:pt-48 md:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal in max-w-3xl">
+        <span class="inline-flex rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.18em] font-medium bg-accent/10 text-accent border border-accent/20">Sitemap</span>
+        <h1 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-keep-all">Sitemap</h1>
+        <p class="mt-6 text-base md:text-lg text-zinc-400 leading-relaxed break-keep-all">The full structure of the IMB Co., Ltd. website. Click any item to jump straight there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITEMAP GRID -->
+  <section class="pb-24 md:pb-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:1">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="solar:buildings-3-bold-duotone"></iconify-icon></div>
+          <a href="/en/about/index.html" class="text-xl font-bold hover:text-accent ease-supa">About</a>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/about/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Overview</a></li>
+          <li><a href="/en/about/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>History</a></li>
+          <li><a href="/en/about/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Patents &amp; Trademarks</a></li>
+          <li><a href="/en/about/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Certifications &amp; Awards</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:2">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="solar:layers-bold-duotone"></iconify-icon></div>
+          <a href="/en/business/index.html" class="text-xl font-bold hover:text-accent ease-supa">Materials</a>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/business/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Key application fields</a></li>
+          <li><a href="/en/business/index.html#consulting" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>On-site technical consulting</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:3">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="ph:drop-duotone"></iconify-icon></div>
+          <a href="/en/ufb/index.html" class="text-xl font-bold hover:text-accent ease-supa">i-UFB Lineup</a>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/ufb/index.html#lineup" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>i-UFB engines &amp; nozzles</a></li>
+          <li><a href="/en/ufb/index.html#lineup" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Consumer FW series</a></li>
+          <li><a href="/en/ufb/index.html#lineup" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Product specifications</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:4">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="solar:atom-bold-duotone"></iconify-icon></div>
+          <a href="/en/ufb-features/index.html" class="text-xl font-bold hover:text-accent ease-supa">UFB Properties</a>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/ufb-features/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>The 6 properties of UFB</a></li>
+          <li><a href="/en/ufb-features/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>UFB in more depth (generation·measurement·use)</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:5">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="solar:map-point-bold-duotone"></iconify-icon></div>
+          <a href="/en/contact/index.html" class="text-xl font-bold hover:text-accent ease-supa">Location · Contact</a>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/contact/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Contact · map</a></li>
+          <li><a href="mailto:imbcoltd@daum.net" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Email inquiry</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal rounded-[2rem] bg-white/5 ring-1 ring-white/10 p-7" style="--i:6">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl"><iconify-icon icon="solar:global-bold-duotone"></iconify-icon></div>
+          <span class="text-xl font-bold">More</span>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-[15px] text-zinc-400">
+          <li><a href="/en/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Home</a></li>
+          <li><a href="/index.html" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>한국어 사이트</a></li>
+          <li><a href="https://blog.naver.com/i-ultrafinebubble" target="_blank" rel="noopener" class="hover:text-white ease-supa flex items-center gap-2"><iconify-icon icon="solar:alt-arrow-right-linear" class="text-accent text-sm"></iconify-icon>Official Blog</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5">
+          <img src="/assets/img/logo-imb.png" alt="IMB logo" class="h-9 w-9 object-contain rounded-lg" loading="lazy" decoding="async">
+          <span class="font-bold tracking-tight">IMB Co., Ltd.</span>
+        </div>
+        <p class="mt-4 text-[14px] text-zinc-500 leading-relaxed break-keep-all">A technology partner growing together with customers through industrial materials and ultra-fine bubble (UFB) application technology.</p>
+      </div>
+      <div class="md:col-span-4 text-[14px] text-zinc-400 space-y-2.5">
+        <p class="flex items-start gap-2"><iconify-icon icon="solar:map-point-linear" class="text-accent mt-0.5"></iconify-icon>312 Imgok-gil, Saenggeuk-myeon, Eumseong-gun, Chungcheongbuk-do, Korea</p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:phone-linear" class="text-accent"></iconify-icon>TEL +82-43-750-7534 · FAX +82-43-750-7538</p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:letter-linear" class="text-accent"></iconify-icon><a href="mailto:imbcoltd@daum.net" class="hover:text-white ease-supa">imbcoltd@daum.net</a></p>
+        <p class="flex items-center gap-2"><iconify-icon icon="solar:pen-new-square-linear" class="text-accent"></iconify-icon><a href="https://blog.naver.com/i-ultrafinebubble" target="_blank" rel="noopener" class="hover:text-white ease-supa">Official Blog</a></p>
+      </div>
+      <div class="md:col-span-3 text-[14px] text-zinc-400 flex md:flex-col gap-4 md:gap-2.5 md:items-end">
+        <a href="/en/about/index.html" class="hover:text-white ease-supa">About</a>
+        <a href="/en/business/index.html" class="hover:text-white ease-supa">Materials</a>
+        <a href="/en/ufb/index.html" class="hover:text-white ease-supa">i-UFB Lineup</a>
+        <a href="/en/ufb-features/index.html" class="hover:text-white ease-supa">UFB Properties</a>
+        <a href="/en/contact/index.html" class="hover:text-white ease-supa">Location</a>
+        <a href="/en/sitemap/index.html" class="text-white">Sitemap</a>
+      </div>
+    </div>
+    <p class="mt-10 text-center text-[12px] text-zinc-600">© 2026 IMB Co., Ltd. All rights reserved. · www.ufb.co.kr</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+    const menu = document.getElementById('mobileMenu');
+    document.getElementById('menuBtn').addEventListener('click', () => menu.classList.remove('hidden'));
+    document.getElementById('menuClose').addEventListener('click', () => menu.classList.add('hidden'));
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+  </script>
+</body>
+</html>
