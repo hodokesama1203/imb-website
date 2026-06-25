@@ -72,6 +72,7 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.ufb.co.kr/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ufb.co.kr/en/contact/"/>
+<<<<<<< HEAD
   </url>
   <url>
     <loc>https://www.ufb.co.kr/sitemap/</loc>
@@ -84,5 +85,7 @@
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.ufb.co.kr/sitemap/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ufb.co.kr/en/sitemap/"/>
+=======
+>>>>>>> a229634584c0fadb2ae96dfb7568032bc560c6e7
   </url>
 </urlset>
