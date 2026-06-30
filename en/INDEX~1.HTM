@@ -420,6 +420,7 @@
       window.addEventListener('pageshow', function (e) { if (e.persisted) location.reload(); });
       var intro = document.getElementById('introScreen');
       if (!intro) return;
+      var KEY = 'imbIntroSeen';
       var html = document.documentElement, body = document.body;
       function closeIntro() {
         intro.style.opacity = '0';
