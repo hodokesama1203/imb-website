@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미리보기 · 인트로(매번 표시 수정본)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+  <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Pretendard','system-ui','sans-serif']},colors:{ink:'#070b12',accent:'#38bdf8'}}}}</script>
+  <style>body{word-break:keep-all;font-family:Pretendard,system-ui,sans-serif}</style>
+</head>
+<body class="bg-ink text-zinc-100 antialiased">
+  <div id="introScreen" class="fixed inset-0 z-[100] bg-ink flex items-center justify-center overflow-hidden">
+    <canvas id="introFluid" class="absolute inset-0 w-full h-full"></canvas>
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(circle at 50% 42%, rgba(7,11,18,0.05), rgba(7,11,18,0.72) 76%)"></div>
+    <div class="relative z-10 text-center px-6 select-none pointer-events-none">
+      <p class="text-[11px] uppercase tracking-[0.3em] text-accent mb-4">Industrial Materials · UFB Solutions</p>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">초미세기포 기술로<br>물의 가치를 높입니다</h1>
+      <p class="mt-5 text-[15px] md:text-base text-zinc-300">㈜아이엠비 · i-UFB</p>
+      <button id="introEnter" type="button" class="pointer-events-auto mt-10 inline-flex items-center gap-3 rounded-full bg-accent text-ink font-semibold text-base px-9 py-4 hover:scale-[1.03] active:scale-[0.98] hover:shadow-[0_0_40px_rgba(56,189,248,0.35)] transition">들어가기 <span class="w-7 h-7 rounded-full bg-black/10 flex items-center justify-center"><iconify-icon icon="solar:arrow-right-linear"></iconify-icon></span></button>
+      <p class="mt-6 text-[12px] text-zinc-500">들어가기 누른 뒤 새로고침(F5)하면 인트로가 다시 뜨는지 확인하세요</p>
+    </div>
+  </div>
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div><h2 class="text-3xl md:text-4xl font-bold">여기가 홈페이지입니다</h2></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/webgl-fluid@0.4"></script>
+  <script>
+    (function () {
+      window.addEventListener('pageshow', function (e) { if (e.persisted) location.reload(); });
+      var intro = document.getElementById('introScreen');
+      if (!intro) return;
+      var html = document.documentElement, body = document.body;
+      function closeIntro() {
+        intro.style.opacity = '0'; intro.style.pointerEvents = 'none';
+        html.style.overflow = ''; body.style.overflow = '';
+        setTimeout(function () { intro.style.display = 'none'; }, 800);
+      }
+      html.style.overflow = 'hidden'; body.style.overflow = 'hidden';
+      intro.style.transition = 'opacity .8s ease';
+      var btn = document.getElementById('introEnter');
+      if (btn) btn.addEventListener('click', closeIntro);
+      var c = document.getElementById('introFluid');
+      if (c && typeof WebGLFluid !== 'undefined') {
+        try {
+          WebGLFluid(c, {
+            TRIGGER: 'hover', IMMEDIATE: true, AUTO: true, INTERVAL: 2700,
+            SIM_RESOLUTION: 128, DYE_RESOLUTION: 1024, CAPTURE_RESOLUTION: 512,
+            DENSITY_DISSIPATION: 1.2, VELOCITY_DISSIPATION: 0.5, PRESSURE: 0.8, PRESSURE_ITERATIONS: 20,
+            CURL: 38, SPLAT_RADIUS: 0.35, SPLAT_FORCE: 3500, SPLAT_COUNT: 10,
+            SHADING: true, COLORFUL: true, COLOR_UPDATE_SPEED: 5,
+            BACK_COLOR: { r: 5, g: 9, b: 16 }, TRANSPARENT: false,
+            BLOOM: true, BLOOM_INTENSITY: 0.8, BLOOM_THRESHOLD: 0.55,
+            SUNRAYS: true, SUNRAYS_WEIGHT: 1.0
+          });
+        } catch (e) {}
+      }
+    })();
+  </script>
+</body>
+</html>
